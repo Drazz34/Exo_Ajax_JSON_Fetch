@@ -57,7 +57,7 @@ function listUsers(jsonObj) {
             divGContenu.classList.add('divGcontenu');
 
             iconUser.innerHTML = icon;
-            span.textContent = ` (${username})`;
+            span.textContent = `(${username})`;
             nameUser.innerHTML = nom;
             nameUser.appendChild(span);
             emailUser.textContent = email;
@@ -106,7 +106,6 @@ function listUsers(jsonObj) {
  */
 
 function publicationUsers(jsonObj) {
-    let userLis = document.querySelectorAll('nav li');
     main.innerHTML = "";
 
     //    let userId = i + 1; // Les IDs des utilisateurs dans jsonObj commencent à 1, pas 0
